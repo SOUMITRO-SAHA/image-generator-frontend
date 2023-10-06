@@ -50,17 +50,13 @@ const PreviousImage = () => {
           <div className='mx-8 m-6 grid grid-cols-12 gap-6 h-full overflow-y-auto'>
             {imagesArray?.map(({ _id, url, createdAt }, idx) => {
               const imgPath = url.split('uploads');
-              console.log(imgPath);
+              console.log(url);
               return (
                 <div
                   key={idx}
                   className='h-[200px] col-span-4 bg-green-50 rounded-lg'
                 >
-                  <img
-                    src={`${config.BASE_URL}/uploads/${imgPath}`}
-                    alt={`Img-${_id}`}
-                    className='h-10 w-10'
-                  />
+                  <img src={url} alt={`Img-${_id}`} className='h-10 w-10' />
                 </div>
               );
             })}

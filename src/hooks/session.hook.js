@@ -24,7 +24,6 @@ const useSession = () => {
           Authorization: 'Bearer ' + token,
         },
       });
-      console.log(data);
 
       if (data.user) {
         dispatch(setUser(data.user));

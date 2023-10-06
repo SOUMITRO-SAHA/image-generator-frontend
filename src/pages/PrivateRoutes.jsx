@@ -8,7 +8,6 @@ import { useSelector } from 'react-redux';
 const PrivateRoutes = () => {
   const { user } = useSelector((state) => state.user);
   const { loading, getSession } = useSession();
-  console.log(user);
 
   useEffect(() => {
     getSession();

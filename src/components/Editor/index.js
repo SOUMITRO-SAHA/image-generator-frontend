@@ -291,6 +291,9 @@ function Editor() {
           <h3 className='text-xl font-bold text-center uppercase'>
             Properties
           </h3>
+          <p className='text-center text-slate-400'>
+            Click on the Text to change the properties
+          </p>
 
           {/* Update the Text Size Conditionally */}
           {/* Text Properties */}
