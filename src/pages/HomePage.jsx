@@ -4,7 +4,7 @@ import SideMenu from '../components/SideMenu/SideMenu.Component';
 
 const HomePage = () => {
   return (
-    <main className='h-screen w-screen overflow-hidden'>
+    <main className='h-screen w-screen'>
       <section className='grid grid-cols-12'>
         <div className='col-span-3 xl:col-span-2 bg-slate-900'>
           {/* Side Menu */}
